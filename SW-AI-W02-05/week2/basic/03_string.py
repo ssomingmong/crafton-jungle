@@ -36,6 +36,7 @@ def is_palindrome(s):
     """
     # TODO: 알파벳과 숫자만 남기고 소문자로 변환하세요
     # 힌트: isalnum() 메서드와 lower() 메서드 사용
+
     filtered = [c.lower() for c in s if c.isalnum()]
     text = "".join(filtered)
     

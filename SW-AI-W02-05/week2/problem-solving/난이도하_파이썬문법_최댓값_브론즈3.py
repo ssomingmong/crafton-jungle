@@ -12,7 +12,6 @@ for i in arr:
     
     if i > max:
         max = i
-        break
 
 for i in range(9):
     if max == arr[i]:
