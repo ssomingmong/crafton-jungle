@@ -2,7 +2,7 @@
 # 문제 링크: https://www.acmicpc.net/problem/11724
 
 import sys
-sys.setrecursionlimit(1001)
+sys.setrecursionlimit(2000)
 input = sys.stdin.readline
 
 n, m = map(int, input().split())
