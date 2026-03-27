@@ -46,7 +46,13 @@ def make_change_greedy(change, coins):
     # TODO: 각 동전에 대해 반복
     ## 현재 동전으로 거슬러줄 수 있는 개수 계산    
     ## 개수가 0보다 크면 결과에 추가
-    pass
+    for i in range(len(coins)):
+        count = change // coins[i]
+        change = change % coins[i]
+        
+        if count > 0:
+            result[coins[i]] = count
+            total_coins += count
     
     return total_coins, result
 
